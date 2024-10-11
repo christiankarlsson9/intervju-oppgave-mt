@@ -1,0 +1,28 @@
+{
+	"name": "intervju-oppgave-mt",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"test": "vitest",
+		"preview": "vite preview",
+		"lint": "prettier --check .",
+		"format": "prettier --write ."
+	},
+	"dependencies": {
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-react": "^4.3.2",
+		"@types/react": "^18.3.11",
+		"@types/react-dom": "^18.3.0",
+		"prettier": "^3.3.3",
+		"typescript": "^5.6.3",
+		"vite": "^5.4.8",
+		"vite-tsconfig-paths": "^5.0.1",
+		"vitest": "^2.1.2"
+	},
+	"type": "module"
+}
