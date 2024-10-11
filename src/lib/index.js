@@ -1,4 +1,3 @@
-// @ts-nocheck
 export function doStuff(tekst, lengde) {
   let words = tekst.split(' ')
   let processedWords = {}
