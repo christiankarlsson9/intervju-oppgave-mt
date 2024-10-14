@@ -28,7 +28,15 @@ const App = () => {
           Vis resultat
         </button>
       </div>
-      {showResult && <div>{Object.entries(doStuff(bible, length)).length}</div>}
+      <div>
+        {showResult && (
+          <ul>
+            {Object.entries(doStuff(bible, length)).map(([word, length]) => (
+              <li key={word}>{`${word}: ${length}`}</li>
+            ))}
+          </ul>
+        )}
+      </div>
     </main>
   )
 }
