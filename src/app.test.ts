@@ -16,12 +16,12 @@ describe('Test stuff', () => {
 
   test('should ignore signs', () => {
     const res = doStuff('hello there, my guy', 5)
-    expect(res).toBe({ hello: 1, there: 1 })
+    expect(res).toEqual({ hello: 1, there: 1 })
   })
 
   test('should ignore capitalization', () => {
     const res = doStuff('Hello hello', 5)
-    expect(res).toBe({ hello: 2 })
+    expect(res).toEqual({ hello: 2 })
   })
 
   test.skip('gotta go fast', () => {
