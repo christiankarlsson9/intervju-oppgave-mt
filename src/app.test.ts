@@ -1,7 +1,7 @@
 import { doStuff } from '@/lib'
 import { describe, expect, test } from 'vitest'
 
-import { bible } from './bible'
+import { text } from './text'
 
 describe('Test stuff', () => {
   test('should count', () => {
@@ -26,7 +26,7 @@ describe('Test stuff', () => {
 
   test.skip('gotta go fast', () => {
     const start = Date.now()
-    const res = doStuff(bible, 1)
+    const res = doStuff(text, 1)
     const end = Date.now()
     console.log(`Took ${end - start}ms`)
   })

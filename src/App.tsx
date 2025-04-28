@@ -1,4 +1,4 @@
-import { bible } from '@/bible'
+import { text } from '@/text'
 import { doStuff } from '@/lib'
 import React, { useState } from 'react'
 
@@ -31,7 +31,7 @@ const App = () => {
       <div>
         {showResult && (
           <ul>
-            {Object.entries(doStuff(bible, length)).map(([word, length]) => (
+            {Object.entries(doStuff(text, length)).map(([word, length]) => (
               <li key={word}>{`${word}: ${length}`}</li>
             ))}
           </ul>
